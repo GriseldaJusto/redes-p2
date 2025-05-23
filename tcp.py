@@ -40,7 +40,7 @@ class Servidor:
 
 
 class Conexao:
-    def _init_(self, servidor, id_conexao, client_isn):
+    def __init__(self, servidor, id_conexao, client_isn):
         self.servidor = servidor
         self.id_conexao = id_conexao 
         self.client_addr, self.client_port, self.servidor_addr, self.servidor_port = id_conexao
